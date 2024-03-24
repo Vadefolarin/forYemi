@@ -42,25 +42,16 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Column(
         children: [
           const SizedBox(height: 100),
-          ListView(
-            scrollDirection: Axis.horizontal,
-            children: [
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
+          Container(
+            width: double.infinity,
+            height: 100,
+            color: Colors.blue,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/images/video.mp4'),
+                fit: BoxFit.cover,
               ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.green,
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.blue,
-              ),
-            ],
+            ),
           ),
           const Text(
             'Login',
